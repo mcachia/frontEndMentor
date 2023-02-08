@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: hsl(219, 58%, 70%);
 }
@@ -6,8 +11,11 @@ body {
     border: 15px solid white;
     border-radius: 10px;
     background-color: white;
+    font-family: 'Outfit', sans-serif;
     position: center;
-    margin: 500px;
+    margin: 50% auto;
+    width: 376px;
+    height: 550px;
     text-align: center;
 }
 
@@ -15,6 +23,20 @@ img {
     height: auto;
     max-width: 100%;
     border-radius: 10px;
+}
+
+h3 {
+    padding-top: 15px;
+    color: hsl(218, 44%, 22%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: 400;
+    color: hsl(212, 45%, 89%);
 }
 
 .attribution {
