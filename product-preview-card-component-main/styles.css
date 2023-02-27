@@ -12,12 +12,22 @@ body {
 }
 
 .parent {
-    align-items: center;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-content: center;
     min-height: 100vh;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+}
+
+h1,
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
