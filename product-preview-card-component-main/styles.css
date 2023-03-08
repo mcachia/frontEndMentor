@@ -1,72 +1,117 @@
 body {
-  background-color: hsl(30, 38%, 92%);
+    background-color: #f2ebe3;
 }
 
 .main-container {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 600px;
-  justify-content: center;
-  margin: auto;
-  width: 800px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
 }
 
-.child-container {
-  height: 600px;
-  width: 100%;
+.container {
+    height: 600px;
+    width: 100%;
 }
 
 img {
-  background-size: contain;
-  height: 100%;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .text-container {
-  background-color: white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 button {
-  background-color: #447444;
-  border-color: #447444;
-  border-radius: 10px;
-  color: white;
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
-  width: 50%;
+    background-color: #447444;
+    border-color: #447444;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
 }
 
 button:hover {
-  background-color: #5e8b5e;
-  cursor: pointer;
+    background-color: #5e8b5e;
+    cursor: pointer;
 }
 
 embed {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (min-width: 800px) {
-  .child-container {
-    width: 50%;
-  }
+    .container {
+        width: 50%;
+    }
 }
 
-h2 {
-  font-family: "Fraunces", serif;
+h1,
+h2,
+p {
+    margin-top: 0;
+    margin-bottom: 0
 }
 
 h1,
 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    padding-left: 30px;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1c232b;
+}
+
+h1 {
+    padding: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #6c7289;
+}
+
+p {
+    padding-left: 30px;
+    color: #6c7289;
+    font-weight: 400;
+}
+
+.price-tag {
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #447444;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+sup {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6c7289;
+}
+
+button {
+    margin-top: auto;
+    width: 250px;
 }
