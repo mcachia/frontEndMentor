@@ -6,7 +6,7 @@ body {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
+    max-height: 600px;
     justify-content: center;
     margin: auto;
     max-width: 800px;
@@ -21,14 +21,10 @@ img {
     background-size: contain;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .text-container {
     background-color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 button {
@@ -61,11 +57,39 @@ embed {
     }
 }
 
+@media (max-width: 799px) {
+    #perfume-image {
+        background-image: url(image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .text-container {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+    #perfume-image {
+        background-image: url(image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .text-container {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
 h1,
 h2,
 p {
     margin-top: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 h1,
